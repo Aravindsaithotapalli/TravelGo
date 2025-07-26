@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'default-secret-key')
 
 # AWS Configuration
-AWS_REGION = ''
+AWS_REGION = 'us-east-1'
 USERS_TABLE = 'travel_user'
 SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:522814706478:Travelgo"
 
