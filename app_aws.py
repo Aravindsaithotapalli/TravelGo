@@ -8,9 +8,9 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'default-secret-key')
 
 # AWS Configuration
-AWS_REGION = 'us-east-1'
+AWS_REGION = ''
 USERS_TABLE = 'travel_user'
-SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:604665149129:fixitnow_Topic"
+SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:522814706478:Travelgo"
 
 # AWS Initialization
 dynamodb = boto3.resource('dynamodb', region_name=AWS_REGION)
